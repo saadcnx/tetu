@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="ZeroCommit helps developers turn AI-generated code instructions into project changes and understand large codebases with Deep Map.">
+  <title>ZeroCommit — Your AI. Your Codebase. Your Workflow.</title>
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+  <hero-card></hero-card>
+
+  <main>
+    <section class="section-frame" id="product">
+      <div class="section-kicker">
+        <span class="kicker-number">01</span>
+        <span>THE PROBLEM</span>
+      </div>
+
+      <div class="intro-layout">
+        <div>
+          <h2 class="section-title">AI writes the code.<br>Now what?</h2>
+          <p class="muted-lead">Getting the answer is one thing. Applying it across your project is another.</p>
+        </div>
+
+        <div class="intro-description">
+          <p>Your application might have hundreds of files, connected components, styles and dependencies. Your AI can suggest the changes, but getting those changes into the correct files can become repetitive work.</p>
+          <p>Replace entire files, manually search for snippets, or use an autonomous coding workflow that may make additional model requests.</p>
+          <p class="strong-line">ZeroCommit is designed to simplify the step between AI instructions and actual code changes.</p>
+        </div>
+      </div>
+
+      <div class="problem-grid">
+        <article class="problem-card">
+          <div class="card-topline">
+            <span class="card-index">01</span>
+            <span class="card-label">MANUAL WORK</span>
+          </div>
+
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M8 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10"/>
+              <path d="M14 3h5a2 2 0 0 1 2 2v10"/>
+              <path d="M14 3v5h5M15 19h6M18 16v6"/>
+            </svg>
+          </div>
+
+          <h3>Find every file. Replace every snippet.</h3>
+          <p>Navigate through folders, open files, search for the right code and repeat the process for every change.</p>
+
+          <div class="mini-stack">
+            <span>Open the file</span>
+            <span>Find the code</span>
+            <span class="dark-mini-item">Replace the code</span>
+            <span>Repeat again</span>
+          </div>
+        </article>
+
+        <article class="problem-card">
+          <div class="card-topline">
+            <span class="card-index">02</span>
+            <span class="card-label">LARGE RESPONSES</span>
+          </div>
+
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="4" y="3" width="16" height="18" rx="2"/>
+              <path d="M8 7h8M8 11h8M8 15h6M8 18h4"/>
+            </svg>
+          </div>
+
+          <h3>Thousands of lines for tiny changes.</h3>
+          <p>When an AI returns entire files, a few small edits can require large responses and more manual replacement.</p>
+
+          <div class="code-stack" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span class="short"></span>
+            <span></span>
+            <span class="medium"></span>
+            <span class="short"></span>
+          </div>
+        </article>
+
+        <article class="problem-card">
+          <div class="card-topline">
+            <span class="card-index">03</span>
+            <span class="card-label">REPEATED PROCESSING</span>
+          </div>
+
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v5l3 2"/>
+              <path d="m7 2 2 2M17 2l-2 2"/>
+            </svg>
+          </div>
+
+          <h3>More processing than you need.</h3>
+          <p>Some agentic coding workflows repeatedly inspect project files and make additional model requests while working.</p>
+
+          <div class="loop-stack">
+            <span>Read project files</span>
+            <span class="dark-mini-item">Process the task again</span>
+            <span>Inspect more files</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-frame" id="workflow">
+      <div class="section-kicker">
+        <span class="kicker-number">02</span>
+        <span>HOW IT WORKS</span>
+      </div>
+
+      <div class="section-heading-row">
+        <h2 class="section-title">Three steps.<br><span class="text-muted">Less busywork.</span></h2>
+        <p class="section-description">Use the AI you already know. ZeroCommit helps turn its supported code-edit instructions into changes across your project.</p>
+      </div>
+
+      <div class="workflow-grid">
+        <article class="workflow-card">
+          <div class="workflow-topline">
+            <span class="step-number">01</span>
+            <span class="step-label">YOUR AI</span>
+          </div>
+
+          <div class="workflow-illustration">
+            <div class="mock-window">
+              <div class="mock-window-bar">
+                <span></span><span></span><span></span>
+                <span class="mock-window-title">AI response</span>
+              </div>
+              <div class="mock-code">
+                <span class="code-caption">FILE</span>
+                <span>src/components/Header.jsx</span>
+                <span class="code-caption">SEARCH</span>
+                <span class="code-line">const title = "Old";</span>
+                <span class="code-caption">REPLACE</span>
+                <span class="code-line code-added">const title = "New";</span>
+              </div>
+            </div>
+          </div>
+
+          <h3>Get the code instructions</h3>
+          <p>Ask your AI to solve a bug or build a feature. Copy its supported search-and-replace instructions or edit directions.</p>
+          <div class="workflow-footer">Keep your existing AI</div>
+        </article>
+
+        <article class="workflow-card">
+          <div class="workflow-topline">
+            <span class="step-number">02</span>
+            <span class="step-label">ZEROCOMMIT</span>
+          </div>
+
+          <div class="workflow-illustration">
+            <div class="paste-mock">
+              <div class="paste-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="7" y="3" width="10" height="4" rx="1"/>
+                  <path d="M7 5H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+                  <path d="m8 13 2 2 5-5"/>
+                </svg>
+              </div>
+              <strong>AI instructions</strong>
+              <span class="paste-line"></span>
+              <span class="paste-line"></span>
+              <span class="paste-line short"></span>
+              <div class="paste-action">Select project</div>
+            </div>
+          </div>
+
+          <h3>Paste and select your project</h3>
+          <p>Paste the response into ZeroCommit, then choose the repository or local project folder you want to update.</p>
+          <div class="workflow-footer">One place for your edits</div>
+        </article>
+
+        <article class="workflow-card">
+          <div class="workflow-topline">
+            <span class="step-number">03</span>
+            <span class="step-label">YOUR PROJECT</span>
+          </div>
+
+          <div class="workflow-illustration">
+            <div class="detected-mock">
+              <div class="detected-title">Detected changes</div>
+              <div class="detected-file">
+                <span class="file-type">JS</span>
+                <span>Header.jsx</span>
+                <span class="file-check">✓</span>
+              </div>
+              <div class="detected-file">
+                <span class="file-type">JS</span>
+                <span>Dashboard.jsx</span>
+                <span class="file-check">✓</span>
+              </div>
+              <div class="detected-file">
+                <span class="file-type">CSS</span>
+                <span>dashboard.css</span>
+                <span class="file-check">✓</span>
+              </div>
+              <div class="detected-status">
+                <span></span>
+                Ready for review
+              </div>
+            </div>
+          </div>
+
+          <h3>Detect and stage the changes</h3>
+          <p>Click Detect &amp; Stage. ZeroCommit processes supported instructions and applies matching edits across the relevant files.</p>
+          <div class="workflow-footer">Designed for multi-file edits</div>
+        </article>
+      </div>
+
+      <p class="workflow-note">
+        <span class="note-mark">i</span>
+        Always review important changes and run your tests before committing or deploying.
+      </p>
+    </section>
+
+    <section class="section-frame deepmap-section" id="deep-map">
+      <div class="section-kicker">
+        <span class="kicker-number">03</span>
+        <span>CODEBASE CONTEXT</span>
+      </div>
+
+      <div class="deepmap-layout">
+        <div class="deepmap-copy">
+          <span class="eyebrow-text">FOR LARGE PROJECTS</span>
+          <h2 class="section-title">Give your AI<br>a <span class="text-muted">map.</span></h2>
+          <p class="section-description">A codebase can contain hundreds of files or millions of tokens. Instead of providing everything at once, give your AI a structured view of the project so it can identify the files relevant to your task.</p>
+
+          <div class="feature-detail">
+            <span class="detail-index">A</span>
+            <div>
+              <h3>Repository to text</h3>
+              <p>Combine project files into a readable text document that an AI can examine to understand your codebase.</p>
+            </div>
+          </div>
+
+          <div class="feature-detail">
+            <span class="detail-index">B</span>
+            <div>
+              <h3>Deep Map</h3>
+              <p>Create a structured overview of the project. Use it to help your AI identify which files it needs for a particular task.</p>
+            </div>
+          </div>
+
+          <div class="feature-detail">
+            <span class="detail-index">C</span>
+            <div>
+              <h3>Context to changes</h3>
+              <p>Give your AI relevant project context, get the solution, and use ZeroCommit to apply its supported editing instructions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="architecture-panel">
+          <div class="architecture-toolbar">
+            <div class="toolbar-brand">
+              <span class="toolbar-mark">Z</span>
+              <span>Project Explorer</span>
+            </div>
+            <span class="toolbar-tag">EXAMPLE</span>
+          </div>
+
+          <div class="architecture-content">
+            <div class="architecture-root">
+              <span class="folder-icon">▰</span>
+              <span>my-project/</span>
+              <span class="root-tag">CODEBASE</span>
+            </div>
+
+            <div class="tree-branch">
+              <div class="tree-node">
+                <span class="tree-connector"></span>
+                <span class="folder-icon">▰</span>
+                <span>src/</span>
+              </div>
+              <div class="tree-node selected-node">
+                <span class="tree-connector"></span>
+                <span class="folder-icon">▰</span>
+                <span>components/</span>
+                <span class="relevant-tag">Relevant</span>
+              </div>
+              <div class="tree-node nested-node">
+                <span class="tree-connector"></span>
+                <span class="file-icon">JS</span>
+                <span>Header.jsx</span>
+              </div>
+              <div class="tree-node nested-node">
+                <span class="tree-connector"></span>
+                <span class="file-icon">JS</span>
+                <span>Sidebar.jsx</span>
+              </div>
+              <div class="tree-node">
+                <span class="tree-connector"></span>
+                <span class="folder-icon">▰</span>
+                <span>pages/</span>
+              </div>
+              <div class="tree-node">
+                <span class="tree-connector"></span>
+                <span class="folder-icon">▰</span>
+                <span>styles/</span>
+              </div>
+              <div class="tree-node">
+                <span class="tree-connector"></span>
+                <span class="file-icon">JS</span>
+                <span>package.json</span>
+              </div>
+            </div>
+
+            <div class="architecture-result">
+              <div class="result-heading">
+                <span class="result-mark">↳</span>
+                <span>Deep Map</span>
+                <span class="result-tag">PROJECT OVERVIEW</span>
+              </div>
+              <p>Help your AI navigate the structure and determine which files are relevant to the task.</p>
+              <div class="result-flow">
+                <span>Project</span>
+                <span>→</span>
+                <span>Relevant files</span>
+                <span>→</span>
+                <span>AI solution</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="architecture-footer">
+            <span>STRUCTURE</span>
+            <span>CONTEXT / 01</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-frame" id="features">
+      <div class="section-kicker">
+        <span class="kicker-number">04</span>
+        <span>BUILT AROUND YOUR WORKFLOW</span>
+      </div>
+
+      <div class="section-heading-row">
+        <h2 class="section-title">Less repetition.<br><span class="text-muted">More building.</span></h2>
+        <p class="section-description">ZeroCommit focuses on the work between asking an AI for help and applying the resulting changes to your own project.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-number">01 / AI</span>
+          <div class="feature-symbol">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M8 5 3 12l5 7M16 5l5 7-5 7"/>
+            </svg>
+          </div>
+          <h3>Your AI, your choice.</h3>
+          <p>Keep using your preferred AI interface. Get code instructions from the model you already work with.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-number">02 / FILES</span>
+          <div class="feature-symbol">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h7l2 3h7v13H4z"/>
+              <path d="M8 11h8M8 15h6"/>
+            </svg>
+          </div>
+          <h3>Made for multiple files.</h3>
+          <p>Handle supported code-edit instructions that affect different parts of your project through one workflow.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-number">03 / EDITS</span>
+          <div class="feature-symbol">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 5h16M4 12h16M4 19h16"/>
+              <path d="m15 9 3 3-3 3"/>
+            </svg>
+          </div>
+          <h3>Target the actual change.</h3>
+          <p>Use focused search-and-replace instructions when appropriate, instead of reproducing an entire large file.</p>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-number">04 / CONTEXT</span>
+          <div class="feature-symbol">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="10.5" cy="10.5" r="6.5"/>
+              <path d="m15.5 15.5 5 5M8 10.5h5M10.5 8v5"/>
+            </svg>
+          </div>
+          <h3>Understand the codebase.</h3>
+          <p>Use repository export and Deep Map to provide useful project context to your AI before it proposes changes.</p>
+        </article>
+      </div>
+
+      <div class="compatibility">
+        <span class="compatibility-label">AI tools you can work with</span>
+        <span class="ai-label">ChatGPT</span>
+        <span class="ai-label">Claude</span>
+        <span class="ai-label">Gemini</span>
+        <span class="ai-label">DeepSeek</span>
+        <span class="ai-label">Qwen</span>
+        <span class="ai-label">More models</span>
+      </div>
+    </section>
+
+    <section class="section-frame faq-section" id="faq">
+      <div class="section-kicker">
+        <span class="kicker-number">05</span>
+        <span>QUESTIONS &amp; ANSWERS</span>
+      </div>
+
+      <div class="faq-layout">
+        <div>
+          <h2 class="section-title">Good to<br><span class="text-muted">know.</span></h2>
+          <p class="faq-intro">The basics of how ZeroCommit fits into your coding workflow.</p>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>What exactly does ZeroCommit do?</summary>
+            <p>ZeroCommit helps turn AI-generated code instructions into changes in your project. Paste the AI response, select your project and use Detect &amp; Stage to process supported edits across matching files.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do I need to use a specific AI model?</summary>
+            <p>The workflow is designed to work with the AI you already use. Ask it to produce supported code-edit instructions, then pass the response to ZeroCommit. Supported formats depend on the product's implementation.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What is the difference between codebase export and Deep Map?</summary>
+            <p>Codebase export combines project files into a readable text document. Deep Map provides a structured overview that can help an AI identify relevant files when the full codebase is too large to provide at once.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Can it handle projects with many files?</summary>
+            <p>ZeroCommit is designed for multi-file editing workflows. The actual results depend on the instructions, matching code and supported project workflow. Deep Map helps you provide useful context for larger codebases.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Why not use an autonomous coding agent?</summary>
+            <p>Autonomous agents can be useful for many tasks. ZeroCommit offers an alternative for developers who prefer to ask their AI for a solution and then apply the resulting supported instructions through a separate workflow.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Should I review changes before committing?</summary>
+            <p>Yes. Always review important edits and run your project's tests before committing or deploying. A successful code match does not guarantee that the resulting application will behave correctly.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section" id="get-started">
+      <div class="closing-frame">
+        <div class="closing-grid" aria-hidden="true"></div>
+
+        <span class="closing-kicker">FROM INSTRUCTIONS TO IMPLEMENTATION</span>
+
+        <h2>Let AI write the code.<br><span>Make applying it easier.</span></h2>
+
+        <p>Keep your AI. Keep your workflow. Spend less time moving code between files.</p>
+
+        <a class="closing-button" href="#workflow">
+          Explore the workflow
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+
+        <span class="closing-wordmark">ZeroCommit</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-logo" href="#top">
+      <span class="footer-mark">Z</span>
+      <span>ZeroCommit</span>
+    </a>
+
+    <p>From AI instructions to real code changes.</p>
+
+    <a class="footer-top" href="#top">BACK TO TOP ↑</a>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> ZeroCommit</span>
+      <span>Built for developers who work with AI.</span>
+    </div>
+  </footer>
+</body>
+</html>
